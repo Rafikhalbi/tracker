@@ -22,7 +22,7 @@ def menu(_rafixd):
     ip_user = input("? IP > ")
     ket("* Please wait...");time.sleep(1)
     if ip_user in["get_ip","GET_IP"]:
-        myip()
+        exit(myip())
     try:
         req = requests.get(_rafixd+ip_user)
         jsl = json.loads(req.text) 
